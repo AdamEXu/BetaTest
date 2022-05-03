@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>PantherChat</title>
+<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="modal.css">
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<script src="javascript.js"></script>
+</head>
+<body>
+<div class="header">
+<table>
+  <tr>
+  <div class="headerforcss">
+    <td class="toolbar-head"><a href="https://pantherchat.rocks"><img src="pantherchat-logo.png" height="28" width="232"></a></td>
+     <td>
+       <p><a href="/signup" class="nav">Register</a><p>
+     </td>
+     <td>
+      <p><a href="/login" class="nav">Login</a><p>
+     </td>
+  </div>
+  </tr>
+</table>
+<button id="myBtn" class="btn btn-outline-light" onclick="window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ")">Register</button>
+</div>
+  <div class="fade-in-text">
+<div class="banner">
+<h1 class="banner-text-top">CONNECTING JLS</h1>
+<p class="banner-text-bottom">FIND YOUR FRIENDS • MESSAGE YOUR PEERS • FEEL YOUR SAFEST</p>
+</div>
+</div>
+<div class="non-header">
+<p id="message"></p>
+  <p class="fade-in-text">What's PantherChat? PantherChat is a safe and secure way to contact and talk to your friends and classmates at JLS!<br>Ever been in a situation where you needed to talk to a classmate but you couldn't? PantherChat is the way.</p>
+</div>
+  </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" background-color=#404040>
+    <span class="close">&times;</span>
+    <h1>Sadly, the beta isn't fully functional right now. Try again later!</h1>
+  </div>
+
+</div>
+  <script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
+</body>
+
+</html>
